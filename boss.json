@@ -1,0 +1,9 @@
+{
+	"name": "Inifile",
+	"description": "Inifile - Service to manager inifiles data",
+	"version": "1.0.0",
+	"homepage": "https://github.com/luisnt/Inifile",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "sample",
+	"description": "Test Initiles - Service to manager inifiles data",
+	"version": "1.0.0",
+	"homepage": "https://github.com/luisnt/initiles",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/luisnt/initiles": "^1.0.0"
+	}
+}
