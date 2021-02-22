@@ -6,6 +6,6 @@
 	"mainsrc": "./",
 	"projects": [],
 	"dependencies": {
-		"github.com/luisnt/initiles": "^1.0.0"
+		"github.com/luisnt/inifile": "^1.0.0"
 	}
 }

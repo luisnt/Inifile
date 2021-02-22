@@ -7,28 +7,34 @@
 #### Sample use
 ```delphi
  
+program InifileTest;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+
 uses
   System.SysUtils
     , ServiceInifile
     ;
 
-const 
-  DEFAULT_IP_VALUE = '127.0.0.1';
+const
+  DEFAULT_IP_VALUE   = '127.0.0.1';
+  DEFAULT_XPTO_VALUE = 'Default Value';
 
 var
-  value : string;
+  value: string;
+
 begin
   ReportMemoryLeaksOnShutdown := true;
-
   try
-    value :=  IniFile.Read('SESSION', 'Property-ip', DefaultValue{ OPTIONAL }); 
-    WriteLn('value: ', value);
+    value := IniFile.Read('SESSION', 'Property-ip', DEFAULT_IP_VALUE { OPTIONAL } );
+    WriteLn('ip: ', value);
 
-    value :=  IniFile.Write('SESSION', 'Property-Xpto', 'xpto'); 
-    WriteLn('value: ', value);
-
-    value :=  IniFile.Read('SESSION', 'Property-Xpto'); 
-    WriteLn('value: ', value);
+    IniFile.Write('SESSION', 'Property-Xpto', 'xpto');
+    value := IniFile.Read('SESSION', 'Property-Xpto', DEFAULT_XPTO_VALUE { OPTIONAL } );
+    WriteLn('outer value: ', value);
 
     ReadLn;
   except
@@ -39,3 +45,11 @@ begin
 end.
 
 ```
+
+````initile
+
+[SESSION]
+Property-ip=127.0.0.1
+Property-Xpto=xpto
+
+````

@@ -1,0 +1,14 @@
+{
+	"hash": "5e8ff9bf55ba3508199d22e984129be6",
+	"updated": "2021-02-21T21:49:34.6380818-03:00",
+	"installedModules": {
+		"github.com/luisnt/inifile": {
+			"name": "inifile",
+			"version": "1.0.0",
+			"hash": "f2ea971164081c15230edd5b5929a331",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}
