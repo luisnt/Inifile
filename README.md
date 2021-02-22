@@ -24,10 +24,10 @@ begin
     value :=  IniFile.Read('SESSION', 'Property-ip', DefaultValue{ OPTIONAL }); 
     WriteLn('value: ', value);
 
-    value :=  IniFile.Write('SESSION', 'Property', 'xpto'); 
+    value :=  IniFile.Write('SESSION', 'Property-Xpto', 'xpto'); 
     WriteLn('value: ', value);
 
-    value :=  IniFile.Read('SESSION', 'Property-Xpto', 'DefaultValue'{ OPTIONAL }); 
+    value :=  IniFile.Read('SESSION', 'Property-Xpto'); 
     WriteLn('value: ', value);
 
     ReadLn;
